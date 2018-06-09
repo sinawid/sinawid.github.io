@@ -22,37 +22,66 @@
 </head>
 <body>
 	<div class="ui middle aligned center aligned grid">
-	<div class="column">
-		<h2 class="ui image header">
-			<a class="content" href="../">
-				#DONORILMU
-			</a>
-		</h2>
-		<form class="ui large form">
-			<div class="ui stacked segment">
-				<div class="field">
-					<div class="ui left icon input">
-						<i class="user icon"></i>
-						<input type="text" name="email" placeholder="Alamat email">
-					</div>
-				</div>
-				<div class="field">
-					<div class="ui left icon input">
-						<i class="lock icon"></i>
-						<input type="password" name="password" placeholder="Password">
-					</div>
-				</div>
-				<div class="ui fluid large teal submit button">Masuk</div>
+		<div class="column">
+			<h2 class="ui image header">
+				<a class="content" href="../">
+					#DONORILMU
+				</a>
+			</h2>
+
+			<div class="ui error form segment">
+			  <div class="ui error message">
+			    <div class="header">Terjadi Kesalahan</div>
+			    <p>Error message.</p>
+			  </div>
+			  <div class="two fields">
+			    <div class="field">
+			      <label>First Name</label>
+			      <input placeholder="First Name" type="text">
+			    </div>
+			    <div class="field">
+			      <label>Last Name</label>
+			      <input placeholder="Last Name" type="text">
+			    </div>
+			  </div>
+			  <div class="field">
+			    <label>Gender</label>
+			    <div class="ui fluid selection dropdown">
+			      <div class="text">Select</div>
+			      <i class="dropdown icon"></i>
+			      <input type="hidden" name="gender">
+			      <div class="menu">
+			        <div class="item" data-value="male">Male</div>
+			        <div class="item" data-value="female">Female</div>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="field">
+			    <label>Username</label>
+			    <input placeholder="Username" type="text">
+			  </div>
+			  <div class="field">
+			    <label>Password</label>
+			    <input type="password">
+			  </div>
+			  <div class="inline field">
+			    <div class="ui checkbox">
+			      <input type="checkbox">
+			      <label>I agree to the Terms and Conditions</label>
+			    </div>
+			  </div>
+			  <div class="ui blue submit button fluid">Submit</div>
 			</div>
-
-			<div class="ui error message"></div>
-
-		</form>
-
-		<div class="ui message">
-			Belum jadi donor? <a href="signup.html">Gabung, yuk!</a>
+			<div class="ui message">
+				Sudah terdaftar? <a href="../login">Masuk dari sini!</a>
+			</div>
 		</div>
 	</div>
+
+
+
+	<div class="ui footer middle aligned center aligned grid">
+		<p>DonorIlmu @2018</p>
 	</div>
 
 	<script src="../semantic/dist/semantic.min.js"></script>
