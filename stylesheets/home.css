@@ -3,7 +3,7 @@
 	 }
 
 	 .masthead.segment {
-		 min-height: 700px;
+		 min-height: 350px;
 		 padding: 1em 0em;
 	 }
 	 .masthead .logo.item img {
@@ -13,13 +13,13 @@
 		 margin-left: 0.5em;
 	 }
 	 .masthead h1.ui.header {
-		 margin-top: 3em;
-		 margin-bottom: 0em;
-		 font-size: 4em;
+		 margin-top: 0.35em;
+		 margin-bottom: -2rem;
+		 font-size: 3.3em;
 		 font-weight: normal;
 	 }
 	 .masthead h2 {
-		 font-size: 1.7em;
+		 font-size: 1.4em;
 		 font-weight: normal;
 	 }
 
@@ -55,8 +55,8 @@
 		 padding: 5em 0em;
 	 }
 
-	 .secondary.pointing.menu .toc.item {
-		 display: none;
+	 .sidebar.menu{
+		 position: fixed;
 	 }
 
 	 @media only screen and (max-width: 700px) {
