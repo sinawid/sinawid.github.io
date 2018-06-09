@@ -67,6 +67,20 @@
 		 position: fixed;
 	 }
 
+	 #campaign{
+		 min-height: 500px;
+		 padding: 5em;
+	 }
+
+	 #campaign .cards{
+		 min-height: 300px;
+	 }
+
+	 #campaign .button{
+		 min-width: 400px;
+		 margin-top: 50px;
+	 }
+
 	 @media only screen and (max-width: 700px) {
 		 .ui.fixed.menu {
 			 display: none !important;
