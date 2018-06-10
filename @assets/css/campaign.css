@@ -24,7 +24,7 @@
 			font-size: 1.2rem;
 			color: grey;
 		}
-
+		
 		@media only screen and (max-width: 700px) {
  		 .ui.fixed.menu {
  			 display: block !important;
