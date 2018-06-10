@@ -15,3 +15,18 @@
 		#pasang{
 			padding-top: 2em;
 		}
+
+		#campaign .right.item{
+			width: 300px;
+		}
+
+		#campaign .menu .dropdown{
+			font-size: 1.2rem;
+			color: grey;
+		}
+
+		@media only screen and (max-width: 700px) {
+ 		 .ui.fixed.menu {
+ 			 display: block !important;
+ 			 visibility: visible !important;
+ 		 }

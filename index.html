@@ -27,14 +27,37 @@
 
 
 	<!-- Sidebar Menu -->
-	<div class="ui vertical sidebar big menu">
-		<div class="item">
-			<h1>F</h1>
-		</div>
-	  <a class="active item">Tentang DonorIlmu</a>
-	  <a class="item" href="/campaign"><strong>LIHAT CAMPAIGN</strong></a>
-	  <a class="item">Company</a>
-	  <a class="item">Careers</a>
+	<div class="ui vertical sidebar menu">
+		<div class="ui search item">
+	    <div class="ui icon input">
+	      <input class="prompt" type="text" placeholder="Search...">
+	      <i class="search link icon"></i>
+	    </div>
+	    <div class="results"></div>
+	  </div>
+	  <div class="item">
+	    <a class="active menu item" href="../">Beranda</a>
+	    <div class="menu">
+	      <a class="active item">Tentang kami</a>
+	      <a class="item">Campaign terkini</a>
+	      <a class="item">Hubungi</a>
+	    </div>
+	  </div>
+	  <a class="item" href="/campaign">
+	    <i class="grid layout icon"></i> Telusuri Campaign
+	  </a>
+	  <a class="item">
+	    Messages
+	  </a>
+	  <div class="ui dropdown item">
+	    Lainnya
+	    <i class="dropdown icon"></i>
+	    <div class="menu">
+	      <a class="item"><i class="edit icon"></i> Edit Profile</a>
+	      <a class="item"><i class="globe icon"></i> Choose Language</a>
+	      <a class="item"><i class="settings icon"></i> Account Settings</a>
+	    </div>
+	  </div>
 	</div>
 
 
@@ -68,10 +91,13 @@
 	          <i class="sidebar icon"></i>
 						<label> Menu</label>
 	        </a>
-					<div class="ui small icon input">
-			      <input type="text" placeholder="Search...">
-			      <i class="search icon"></i>
-			    </div>
+					<div class="ui search item">
+				    <div class="ui icon input">
+				      <input class="prompt" type="text" placeholder="Search...">
+				      <i class="search link icon"></i>
+				    </div>
+				    <div class="results"></div>
+				  </div>
 	        <div class="right item">
 	          <a class="ui inverted button" href="/login">Masuk</a>
 	        </div>
@@ -237,8 +263,7 @@
 				</div>
 				<div class="ui center aligned grid">
 					<a href="/campaign" class="ui big button">
-						<i class="angle double down icon"></i>
-						<label>LIHAT LEBIH</label>
+						<label>Lihat lainnya</label>
 					</a>
 				</div>
 			</div>
@@ -331,6 +356,7 @@
 
 	<script src="/semantic/dist/semantic.min.js"></script>
 
+	<script src="/@assets/js/script.js"></script>
 	<script src="/@assets/js/home.js"></script>
 </body>
 </html>

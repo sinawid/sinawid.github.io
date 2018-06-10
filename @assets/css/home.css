@@ -63,10 +63,6 @@
 		 position: fixed;
 	 }
 
-	 .ui.sidebar.menu{
-		background-color: #eeeeee;
-	 }
-
 	 #campaign{
 		 min-height: 500px;
 		 padding: 5em;
@@ -103,7 +99,7 @@
 		 }
 		 .masthead h2 {
 			 margin-top: 0.5em;
-			 font-size: 1em;
+			 font-size: 0.7em;
 		 }
 		 #campaign .card{
 			 width: 100vh;
