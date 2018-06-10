@@ -3,7 +3,7 @@
 	 }
 
 	 .ui.masthead.segment{
-		 background-image: url('/.rsc/img/banner.jpg');
+		 background-image: url('/@assets/img/banner.jpg');
 	 }
 
 	 .masthead.segment {
@@ -63,8 +63,8 @@
 		 position: fixed;
 	 }
 
-	 .secondary.menu{
-
+	 .ui.sidebar.menu{
+		background-color: #eeeeee;
 	 }
 
 	 #campaign{
