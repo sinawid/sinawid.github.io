@@ -1,0 +1,17 @@
+		.masthead.segment{
+			min-height: 250px;
+		}
+
+		.masthead h1.ui.header{
+			margin-top: 2.5em;
+			font-size: 2.2em;
+		}
+
+		.masthead .header,
+		.masthead h2{
+			margin-left: -7em;
+		}
+
+		#pasang{
+			padding-top: 2em;
+		}
