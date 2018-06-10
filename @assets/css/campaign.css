@@ -30,6 +30,15 @@
 			display: none;
 		}
 
+		#campaign .secondary.menu{
+			visibility: visible;
+			display: inline;
+		}
+
+		#campaign .container{
+			margin-top: -5em;
+		}
+
 		@media only screen and (max-width: 700px) {
  		 .ui.fixed.menu {
  			 display: block !important;
@@ -44,6 +53,10 @@
 		 .fixed.menu .right
 		 /* Show this at login */
 		 .ui.fixed.menu .right .icon {
+			 display: none;
+		 }
+		 #campaign .secondary.menu{
+			 visibility: hidden;
 			 display: none;
 		 }
 	 }
