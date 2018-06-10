@@ -21,7 +21,7 @@
 
 	<link rel="stylesheet" type="text/css" class="ui" href="/semantic/dist/semantic.min.css">
 
-	<link rel="stylesheet" type="text/css" href="/@assets/css/home.css">
+	<link rel="stylesheet" type="text/css" href="/@assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="/@assets/css/campaign.css">
 </head>
 <body>
@@ -58,23 +58,51 @@
 
 	<!-- Page Contents -->
 	<div class="pusher">
-	  <div class="ui inverted vertical masthead segment">
-			<div class="ui large top fixed menu">
+	  <div class="ui inverted vertical masthead center aligned segment">
+			<div class="ui top fixed hidden menu">
 				<div class="ui container">
 					<a class="toc item">
 						<i class="sidebar icon"></i>
 						<label> Menu</label>
 					</a>
+					<div class="ui search item">
+				    <div class="ui icon input">
+				      <input class="prompt" type="text" placeholder="Explore...">
+				      <i class="search link icon"></i>
+				    </div>
+				    <div class="results"></div>
+				  </div>
 					<div class="right menu">
 						<div class="item">
 							<a class="ui button" href="/login">Masuk</a>
+							<a href="/login"><i class="icon user big circle"></i></a>
 						</div>
-						<div class="item">
+						<div id="register" class="item">
 							<a class="ui primary button" href="/register">Daftar</a>
 						</div>
 					</div>
 				</div>
 			</div>
+
+			<nav class="ui container">
+				<!-- Following Menu -->
+	      <div class="ui large secondary inverted menu">
+	        <a class="toc item">
+	          <i class="sidebar icon"></i>
+						<label> Menu</label>
+	        </a>
+					<div class="ui search item">
+				    <div class="ui icon input">
+				      <input class="prompt" type="text" placeholder="Search...">
+				      <i class="search link icon"></i>
+				    </div>
+				    <div class="results"></div>
+				  </div>
+	        <div class="right item">
+	          <a class="ui inverted button" href="/login">Masuk</a>
+	        </div>
+	      </div>
+	    </nav>
 
 	    <div class="ui text container">
 				<h1 class="ui inverted header">
@@ -90,6 +118,7 @@
 				<div class="ui center aligned header">
 					<h1>CAMPAIGN TERKINI</h1>
 				</div>
+				<br>
 
 				<div class="ui small secondary menu">
 					<div class="ui item">

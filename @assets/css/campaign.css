@@ -24,9 +24,26 @@
 			font-size: 1.2rem;
 			color: grey;
 		}
-		
+
+		.secondary.menu{
+			visibility: hidden;
+			display: none;
+		}
+
 		@media only screen and (max-width: 700px) {
  		 .ui.fixed.menu {
  			 display: block !important;
  			 visibility: visible !important;
  		 }
+		 .ui.fixed.menu .right #register	{
+			 display: none;
+		 }
+		 .fixed.menu .toc label{
+			 display: none;
+		 }
+		 .fixed.menu .right
+		 /* Show this at login */
+		 .ui.fixed.menu .right .icon {
+			 display: none;
+		 }
+	 }

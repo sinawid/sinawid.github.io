@@ -19,5 +19,7 @@ $(document)
 					}
 				);
 
+				$('.fixed.menu').transition('fade in');
+
 	})
 ;

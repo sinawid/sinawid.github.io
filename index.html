@@ -21,6 +21,7 @@
 
 	<link rel="stylesheet" type="text/css" class="ui" href="/semantic/dist/semantic.min.css">
 
+	<link rel="stylesheet" type="text/css" href="/@assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="/@assets/css/home.css">
 </head>
 <body>
@@ -28,7 +29,12 @@
 
 	<!-- Sidebar Menu -->
 	<div class="ui vertical sidebar menu">
-		<div class="ui text header">
+		<div class="ui item">
+			<div class="right item middle aligned" >
+				<i class="user big icon"></i>
+			<br>	Hi, username!
+
+			</div>
 	  </div>
 	  <div class="item">
 	    <a class="active menu item" href="../">Beranda</a>
@@ -65,15 +71,21 @@
 						<i class="sidebar icon"></i>
 						<label> Menu</label>
 					</a>
-					<div id="logo" class="item">
-						LOGO
-					</div>
+					<div class="ui search item">
+				    <div class="ui icon input">
+				      <input class="prompt" type="text" placeholder="Explore...">
+				      <i class="search link icon"></i>
+				    </div>
+				    <div class="results"></div>
+				  </div>
 					<div class="right menu">
 						<div class="item">
 							<a class="ui button" href="/login">Masuk</a>
+							<a href="/login"><i class="icon user big circle"></i></a>
 						</div>
 						<div class="item">
 							<a class="ui primary button" href="/register">Daftar</a>
+
 						</div>
 					</div>
 				</div>
@@ -88,13 +100,14 @@
 	        </a>
 					<div class="ui search item">
 				    <div class="ui icon input">
-				      <input class="prompt" type="text" placeholder="Search...">
+				      <input class="prompt" type="text" placeholder="Explore...">
 				      <i class="search link icon"></i>
 				    </div>
 				    <div class="results"></div>
 				  </div>
 	        <div class="right item">
 	          <a class="ui inverted button" href="/login">Masuk</a>
+						<i class="icon user big circle"></i>
 	        </div>
 	      </div>
 	    </nav>
@@ -106,23 +119,31 @@
 				<br>
 	      <h2>Bantu tenaga ajar untuk mencapai <b>Anda</b> & mereka yang membutuhkan.</h2>
 				<br>
-	      <a class="ui big black button" href="/register">Mulai  #DONORILMU <i class="right arrow icon"></i></a>
+	      <a class="ui big primary button" href="/register">Mulai  #DONORILMU <i class="right arrow icon"></i></a>
 	    </div>
 
 	  </div>
 
 		<div id="campaign" class="ui vertical segment">
-			<div class="ui container">
+			<!-- <div class="ui container"> -->
 				<div class="ui center aligned header">
-					<h1>CAMPAIGN TERKINI</h1>
+					<h1>CAMPAIGN TERBARU</h1>
 				</div>
 				<br><br>
 
-				<div class="ui three cards">
-					<div class="ui card">
-						<div class="image">
+				<div class="ui link three special cards">
+					<div id="card" class="ui card">
+						<a class="blurring dimmable image" href="#">
+							<div class="ui inverted dimmer">
+								<div class="content inverted">
+									<div class="center">
+										<i class="icon huge eye"></i>
+										<h3>Lihat detail</h3>
+									</div>
+								</div>
+							</div>
 							<img src="/@assets/img/banner.jpg" alt="">
-						</div>
+						</a>
 						<div class="content">
 							<div class="header">Title</div>
 							<div class="meta">
@@ -131,17 +152,39 @@
 							<div class="description">
 								One or two sentence description that may go to several lines
 							</div>
+							<br>
+							<div class="ui indicating progress active">
+								<div class="bar">
+									<div class="progress"></div>
+								</div>
+								<div class="label">IDR out of IDR</div>
+							</div>
 						</div>
 						<div class="extra content">
-							<a>
-								<i class="users icon"></i>Users
+							<span class="right floated">
+								#tag1 #tag2 #tag3
+							</span>
+							<a href="#">
+								<span>
+									<i class="user icon"></i>
+									username
+								</span>
 							</a>
 						</div>
 					</div>
-					<div class="ui card">
-						<div class="image">
+
+					<div id="card" class="ui card">
+						<a class="blurring dimmable image" href="#">
+							<div class="ui inverted dimmer">
+								<div class="content inverted">
+									<div class="center">
+										<i class="icon huge eye"></i>
+										<h3>Lihat detail</h3>
+									</div>
+								</div>
+							</div>
 							<img src="/@assets/img/banner.jpg" alt="">
-						</div>
+						</a>
 						<div class="content">
 							<div class="header">Title</div>
 							<div class="meta">
@@ -150,17 +193,39 @@
 							<div class="description">
 								One or two sentence description that may go to several lines
 							</div>
+							<br>
+							<div class="ui indicating progress active">
+								<div class="bar">
+									<div class="progress"></div>
+								</div>
+								<div class="label">IDR out of IDR</div>
+							</div>
 						</div>
 						<div class="extra content">
-							<a>
-								<i class="users icon"></i>Users
+							<span class="right floated">
+								#tag1 #tag2 #tag3
+							</span>
+							<a href="#">
+								<span>
+									<i class="user icon"></i>
+									username
+								</span>
 							</a>
 						</div>
 					</div>
-					<div class="ui card">
-						<div class="image">
+
+					<div id="card" class="ui card">
+						<a class="blurring dimmable image" href="#">
+							<div class="ui inverted dimmer">
+								<div class="content inverted">
+									<div class="center">
+										<i class="icon huge eye"></i>
+										<h3>Lihat detail</h3>
+									</div>
+								</div>
+							</div>
 							<img src="/@assets/img/banner.jpg" alt="">
-						</div>
+						</a>
 						<div class="content">
 							<div class="header">Title</div>
 							<div class="meta">
@@ -169,99 +234,157 @@
 							<div class="description">
 								One or two sentence description that may go to several lines
 							</div>
+							<br>
+							<div class="ui indicating progress active">
+								<div class="bar">
+									<div class="progress"></div>
+								</div>
+								<div class="label">IDR out of IDR</div>
+							</div>
 						</div>
 						<div class="extra content">
-							<a>
-								<i class="users icon"></i>Users
+							<span class="right floated">
+								#tag1 #tag2 #tag3
+							</span>
+							<a href="#">
+								<span>
+									<i class="user icon"></i>
+									username
+								</span>
+							</a>
+						</div>
+					</div>
+
+					<div id="card" class="ui card">
+						<a class="blurring dimmable image" href="#">
+							<div class="ui inverted dimmer">
+								<div class="content inverted">
+									<div class="center">
+										<i class="icon huge eye"></i>
+										<h3>Lihat detail</h3>
+									</div>
+								</div>
+							</div>
+							<img src="/@assets/img/banner.jpg" alt="">
+						</a>
+						<div class="content">
+							<div class="header">Title</div>
+							<div class="meta">
+								<a href="" class="group">Meta</a>
+							</div>
+							<div class="description">
+								One or two sentence description that may go to several lines
+							</div>
+							<br>
+							<div class="ui indicating progress active">
+								<div class="bar">
+									<div class="progress"></div>
+								</div>
+								<div class="label">IDR out of IDR</div>
+							</div>
+						</div>
+						<div class="extra content">
+							<span class="right floated">
+								#tag1 #tag2 #tag3
+							</span>
+							<a href="#">
+								<span>
+									<i class="user icon"></i>
+									username
+								</span>
+							</a>
+						</div>
+					</div>
+
+					<div id="card" class="ui card">
+						<a class="blurring dimmable image" href="#">
+							<div class="ui inverted dimmer">
+								<div class="content inverted">
+									<div class="center">
+										<i class="icon huge eye"></i>
+										<h3>Lihat detail</h3>
+									</div>
+								</div>
+							</div>
+							<img src="/@assets/img/banner.jpg" alt="">
+						</a>
+						<div class="content">
+							<div class="header">Title</div>
+							<div class="meta">
+								<a href="" class="group">Meta</a>
+							</div>
+							<div class="description">
+								One or two sentence description that may go to several lines
+							</div>
+							<br>
+							<div class="ui indicating progress active">
+								<div class="bar">
+									<div class="progress"></div>
+								</div>
+								<div class="label">IDR out of IDR</div>
+							</div>
+						</div>
+						<div class="extra content">
+							<span class="right floated">
+								#tag1 #tag2 #tag3
+							</span>
+							<a href="#">
+								<span>
+									<i class="user icon"></i>
+									username
+								</span>
+							</a>
+						</div>
+					</div>
+
+					<div id="card" class="ui card">
+						<a class="blurring dimmable image" href="#">
+							<div class="ui inverted dimmer">
+								<div class="content inverted">
+									<div class="center">
+										<i class="icon huge eye"></i>
+										<h3>Lihat detail</h3>
+									</div>
+								</div>
+							</div>
+							<img src="/@assets/img/banner.jpg" alt="">
+						</a>
+						<div class="content">
+							<div class="header">Title</div>
+							<div class="meta">
+								<a href="" class="group">Meta</a>
+							</div>
+							<div class="description">
+								One or two sentence description that may go to several lines
+							</div>
+							<br>
+							<div class="ui indicating progress active">
+								<div class="bar">
+									<div class="progress"></div>
+								</div>
+								<div class="label">IDR out of IDR</div>
+							</div>
+						</div>
+						<div class="extra content">
+							<span class="right floated">
+								#tag1 #tag2 #tag3
+							</span>
+							<a href="#">
+								<span>
+									<i class="user icon"></i>
+									username
+								</span>
 							</a>
 						</div>
 					</div>
 				</div>
 
-				<div class="ui four cards">
-					<div class="ui card">
-						<div class="image">
-							<img src="/@assets/img/banner.jpg" alt="">
-						</div>
-						<div class="content">
-							<div class="header">Title</div>
-							<div class="meta">
-								<a href="" class="group">Meta</a>
-							</div>
-							<div class="description">
-								One or two sentence description that may go to several lines
-							</div>
-						</div>
-						<div class="extra content">
-							<a>
-								<i class="users icon"></i>Users
-							</a>
-						</div>
-					</div>
-					<div class="ui card">
-						<div class="image">
-							<img src="/@assets/img/banner.jpg" alt="">
-						</div>
-						<div class="content">
-							<div class="header">Title</div>
-							<div class="meta">
-								<a href="" class="group">Meta</a>
-							</div>
-							<div class="description">
-								One or two sentence description that may go to several lines
-							</div>
-						</div>
-						<div class="extra content">
-							<a>
-								<i class="users icon"></i>Users
-							</a>
-						</div>
-					</div>
-					<div class="ui card">
-						<div class="image">
-							<img src="/@assets/img/banner.jpg" alt="">
-						</div>
-						<div class="content">
-							<div class="header">Title</div>
-							<div class="meta">
-								<a href="" class="group">Meta</a>
-							</div>
-							<div class="description">
-								One or two sentence description that may go to several lines
-							</div>
-						</div>
-						<div class="extra content">
-							<a>
-								<i class="users icon"></i>Users
-							</a>
-						</div>
-					</div>
-					<div class="ui card">
-						<div class="image">
-							<img src="/@assets/img/banner.jpg" alt="">
-						</div>
-						<div class="content">
-							<div class="header">Title</div>
-							<div class="meta">
-								<a href="" class="group">Meta</a>
-							</div>
-							<div class="description">
-								One or two sentence description that may go to several lines
-							</div>
-						</div>
-						<div class="extra content">
-							<a>
-								<i class="users icon"></i>Users
-							</a>
-						</div>
-					</div>
-				</div>
 				<div class="ui center aligned grid">
-					<a href="/campaign" class="ui big button">
+					<a href="/campaign" class="ui big basic button">
 						<label>Lihat lainnya</label>
 					</a>
 				</div>
-			</div>
+			<!-- </div> -->
 
 		</div>
 
@@ -319,7 +442,7 @@
 	  </div>
 
 
-	  <div class="ui inverted vertical footer segment">
+	  <footer class="ui inverted vertical footer segment">
 	    <div class="ui container">
 	      <div class="ui stackable inverted divided equal height stackable grid">
 	        <div class="three wide column">
@@ -347,7 +470,7 @@
 	      </div>
 	    </div>
 	  </div>
-	</div>
+	</footer>
 
 	<script src="/semantic/dist/semantic.min.js"></script>
 
